@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace ZigZagBall.BallScripts
+namespace ZigZagBall.Ball
 {
     public class BallDataTransmiter : MonoBehaviour //Bu class'ın görevi diğer classların verilerini birbirine taşımak olacak.
     {

@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ballDataTransmiter: {fileID: 24830524}
-  _ballMoveSpeed: 3
+  _ballMoveSpeed: 0
 --- !u!114 &24830524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,6 +280,61 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ballDirection: {x: 0, y: 0, z: 0}
+--- !u!1 &415496562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 415496564}
+  - component: {fileID: 415496563}
+  m_Layer: 0
+  m_Name: ColorManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &415496563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415496562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a5f29339f206b54fb592d9a00624dbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundMaterial: {fileID: 2100000, guid: cdbecf3ee1ccb6e4eb5c15090d732144, type: 2}
+  colors:
+  - {r: 0.96862745, g: 0.84313726, b: 0.5803922, a: 0}
+  - {r: 0.46666667, g: 0.54509807, b: 0.92156863, a: 0}
+  - {r: 0.90588236, g: 0.49803922, b: 0.40392157, a: 0}
+  - {r: 0.47058824, g: 0.43529412, b: 0.6509804, a: 0}
+  - {r: 0.8117647, g: 0.41568628, b: 0.5294118, a: 0}
+  - {r: 0.3882353, g: 0.8039216, b: 0.85490197, a: 0}
+  - {r: 0.91764706, g: 0.5254902, b: 0.52156866, a: 0}
+  lerpValue: 0.75
+  time: 5
+--- !u!4 &415496564
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415496562}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.014279604, y: -3.0900352, z: 0.9055276}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0

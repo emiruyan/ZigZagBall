@@ -15,7 +15,7 @@ namespace ZigZagBall.Camera
         private Vector3 _offset; //Camera ve Ball arasındaki mesafeyi tutacak olan değişken.
 
         private Vector3 _newPosition;
-
+ 
         private void Start()
         {
             _offset = transform.position - _ballTransform.position; //Camera ve Ball arasındaki mesafeyi çıkardık ve offset değişkenine atadık.

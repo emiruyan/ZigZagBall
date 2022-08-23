@@ -14,11 +14,11 @@ using UnityEngine;
     rb = GetComponent<Rigidbody>(); //Rigidbody'nin componentini aldık
    }
    
-   public IEnumerator SetRigidbodyValue() 
+   public IEnumerator SetRigidbodyValue() //Ground'un düşme işlemi Coroutine fonksiyon ile yapıyoruz.(Zamanlayıcı)
    {
-    yield return new WaitForSeconds(0.75f);
-    rb.isKinematic = false;
-    rb.useGravity = true;
+    yield return new WaitForSeconds(0.75f); //0.75 saniye sonra
+    rb.isKinematic = false; //isKinematic'i false'a atadık
+    rb.useGravity = true; //useGravity'i true'a atadık (Groundlarımızın düşmesi için)
     
    }
    

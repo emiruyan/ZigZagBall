@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3730827766229492603}
   - component: {fileID: 3305949209251516661}
   - component: {fileID: 7717477143919619961}
+  - component: {fileID: 2437179260784347106}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -155,3 +156,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundDataTransmiter: {fileID: 3730827766229492603}
+--- !u!114 &2437179260784347106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4770979763386220519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29c50cefcae6e2c448c9a0a9c5e5b7b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endYValue: -7

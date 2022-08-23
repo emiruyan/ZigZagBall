@@ -1,18 +1,27 @@
-using System.Collections;
+ using System;
+ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GroundFallController : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+ namespace ZigZagBall.Ground
+ {
+  public class GroundFallController : MonoBehaviour
+  {
+   private Rigidbody rb; //Rigidbody'e eriştik 
+   
+   private void Start()
+   {
+    rb = GetComponent<Rigidbody>(); //Rigidbody'nin componentini aldık
+   }
+   
+   public IEnumerator SetRigidbodyValue() 
+   {
+    yield return new WaitForSeconds(0.75f);
+    rb.isKinematic = false;
+    rb.useGravity = true;
+    
+   }
+   
+  }
+ }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-}

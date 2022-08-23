@@ -13,6 +13,9 @@ GameObject:
   - component: {fileID: 8500363955320551811}
   - component: {fileID: 7631631872865754924}
   - component: {fileID: 6472225177851017818}
+  - component: {fileID: 3730827766229492603}
+  - component: {fileID: 3305949209251516661}
+  - component: {fileID: 7717477143919619961}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -114,3 +117,41 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3730827766229492603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4770979763386220519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 708acdaebe966254caa87cc411322967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundFallController: {fileID: 3305949209251516661}
+--- !u!114 &3305949209251516661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4770979763386220519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050252b47e79adb4085f52c6e11cb2b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7717477143919619961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4770979763386220519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 024a79eba46dcd044a60886cc6b6af85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundDataTransmiter: {fileID: 3730827766229492603}

@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GroundDataTransmiter : MonoBehaviour
+namespace ZigZagBall.Ground
 {
-    // Start is called before the first frame update
-    void Start()
+    public class GroundDataTransmiter : MonoBehaviour //Ground scriptlerimizin birbiri ile haberleşmesini bu class üzerinden yapacağız.
     {
-        
+        [SerializeField] private GroundFallController groundFallController;//GroundFallController classımıza eriştik.
+
+        public void SetGroundRigidbodyValues()
+        {
+            StartCoroutine(groundFallController.SetRigidbodyValue());//Coroutine ile groundFallController içerisindeki SetRigidbodyValue() fonksiyonunu çağırdık.
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
+

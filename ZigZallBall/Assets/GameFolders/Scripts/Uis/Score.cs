@@ -10,9 +10,9 @@ namespace  ZigZagBall.Uis
 {
     public class Score : MonoBehaviour
     {
-
         public static int score; //Static ve int tipinde bir score değişkeni oluşturduk.
         public TextMeshProUGUI scoreText;
+        
 
         private void Start()
         {
@@ -23,6 +23,7 @@ namespace  ZigZagBall.Uis
         {
             scoreText.text = score.ToString(); //scoreText'imizin içindeki Component olan text'i score değişkenimize atadık. Ve ToString'e çevirdik.
         }
+        
     }
 
 }

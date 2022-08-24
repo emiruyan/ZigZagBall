@@ -7,7 +7,7 @@ namespace ZigZagBall.Ball
 {
     public class BallMovementController : MonoBehaviour
     {
-        [SerializeField] private BallDataTransmiter _ballDataTransmiter; //BallDataTransmiter'ımızı çaırdık
+        [SerializeField] private BallDataTransmiter _ballDataTransmiter; //BallDataTransmiter'ımızı çağırdık
 
         [SerializeField] private float _ballMoveSpeed;
 

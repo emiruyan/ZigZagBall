@@ -1,14 +1,21 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using ZigZagBall.Uis;
 
 namespace ZigZagBall.Ball
 {
     public class BallInputController : MonoBehaviour
     {
        [HideInInspector] public Vector3 _ballDirection; //Vector3 türünde bir değişken oluşturduk.
-
+       public bool  isGameOver;
+       public int ballFalling;
+       public GameOverScreen gameOverScreen;
+      
+       
         private void Start()
         {
             _ballDirection = Vector3.left; //_ballDirection'un başlangıç yönü Left olacak. 
@@ -17,7 +24,10 @@ namespace ZigZagBall.Ball
         private void Update()
         {
             HandleBallInputs();
+            GameOver();
         }
+
+      
 
         private void HandleBallInputs()//Ball'ın Inputlarını buradan alacağız.
         {
@@ -36,6 +46,18 @@ namespace ZigZagBall.Ball
             else
             {
                 _ballDirection = Vector3.left;//Tekrar GetMouseButtonDown(0) çağırdığımızda yönünü tekrar left'e çekmiş oluyoruz.
+            }
+        }
+
+        
+        
+        private void GameOver()    
+        {
+            if (transform.position.y <= -5 && !isGameOver)
+            {
+                gameOverScreen.Setup(ballFalling);
+                isGameOver = true;
+                
             }
         }
     }
